@@ -1,0 +1,135 @@
+Q1:
+Anta du har en stakk
+
+S=⟨4,7,32,72,3⟩
+
+hvor det bakerste elementet representerer toppen av stakken slik som de definerer i kapittel 10.1 i læreboken.
+
+Hvordan vil stakken se ut etter å ha kjørt PUSH(S,3)?
+
+Svar: ⟨4,7,32,72,3,3⟩
+
+Q2:
+Q=⟨4,7,32,72,3⟩
+Hvordan vil køen se ut etter å ha kjørt DEQUEUE(Q)?
+
+Svar: ⟨7,32,72,3⟩
+
+Q3:
+Q=⟨4,7,32,72,3⟩
+
+Hva er det minste antallet ENQUEUE-/DEQUEUE-operasjoner du trenger for at køen Q skal endres til ⟨3,4,7,32,72,3⟩?
+
+Svar: 9
+
+Q4: 
+Anta du har en stakk
+
+S=⟨4,7,32,72,3⟩
+
+hvor det bakerste elementet representerer toppen av stakken slik som de definerer i kapittel 10.1 i læreboken.
+
+Hvordan vil stakken se ut etter å ha kjørt PUSH(S,3)?
+
+Svar: ⟨4,7,32,72,3,3⟩
+
+Q5:
+S=⟨4,7,32,72,3⟩
+
+Hvordan vil stakken se ut etter å ha kjørt POP(S)?
+
+Svar: ⟨4,7,32,72⟩
+
+Q6:
+S=⟨4,7,32,72,3⟩
+
+Hva er det minste antallet PUSH-/POP-operasjoner du trenger for at stakken S skal endres til ⟨3,4,7,32,72,3⟩?
+
+Svar: 11
+
+Q7:
+Anta at du har en sirkulær dobbel-lenket liste
+
+L=⟨4,7,32,72,3⟩
+
+hvor hodet peker på 4-tallet.
+
+De neste fem deloppgavene er uavhengige av hverandre; dvs. alle refererer til denne listen.
+
+Hvordan vil listen se ut etter LIST-SEARCH(L,4) som definert i kapittel 10.2 i læreboken?
+
+Svar: ⟨4,7,32,72,3⟩
+
+Q8:
+L=⟨4,7,32,72,3⟩
+
+Hvordan vil listen se ut etter LIST-INSERT(L,x) for en node x med x.key=3?
+
+Svar: ⟨3,4,7,32,72,3⟩
+
+Q9:
+L=⟨4,7,32,72,3⟩
+
+Hvordan vil listen se ut etter LIST-DELETE(L,x) for noden x der x.key=4?
+
+Svar: ⟨7,32,72,3⟩
+
+Q10:
+L=⟨4,7,32,72,3⟩
+
+Vi ønsker å implementere L som en tabell av objekter av objekter tilsvarende som i Cormen (figur 10.5 s.242). Hvilket av alternativene under for startvariabel I og arrayene N=next, K=key og P=prev er korrekt implementert?
+
+Svar: I=7, N=⟨3,0,4,/,0,1,6,0⟩, K=⟨32,0,72,3,0,7,4,0⟩, P=⟨6,0,1,3,0,7,/,0⟩
+
+Q11:
+L=⟨4,7,32,72,3⟩
+
+Vi ønsker å implementere L som en tabell av objekter tilsvarende som i Cormen (figur 10.6 s.243). Hvilket av alternativene under for startvariabel I og array A er korrekt implementert?
+
+Svar: I=4, A=⟨72,13,10,4,7,/,7,10,4,32,1,7,3,/,1⟩
+
+Q12:
+Du får oppgitt at x.key=m og h(m)=j der h er en hashfunksjon. Da er...
+
+Svar: x elementet, m nøkkelen og j hashen.
+
+Q13:
+Hva betyr kollisjon (eng. collision) i forbindelse med hashtabeller?
+
+Svar: Flere ulike faktiske nøkler gir samme hashverdi.
+
+Q14:
+En god hashfunksjon vil, for en tabell av lengde n, kunne garantere at k<n innsettinger ikke vil gi kollisjon?
+
+Svar: Nei
+
+Q15:
+Er h(k) = (k * rand(1:k)) mod m hvor k er nøkkelen og m er størrelsen på hashtabellen en god hashfunksjon?
+
+Svar: Nei
+
+Q16:
+Hvis vi har en funksjon DELETE(T,x) der T er en kjedet hashtabell og x er en listenode, så er worst case kjøretid... (Legg merke til at x her er en faktisk listenode – ikke en nøkkel)
+
+Svar: O(n) for enkel-lenket liste og O(1) for dobbel-lenket liste.
+
+Q17:
+Hva er worst-case-kjøretiden for innsetting i en hashtabell om man bruker kjeding ved kollisjoner? Anta at innsettingen også må sjekke om elementet allerede finnes i tabellen.
+
+Svar: O(n)
+
+Q18:
+For å unngå at vi lager for stor initiell hashtabell ønsker vi å doble størrelsen på hashtabellen hver gang lastfaktoren blir ¼ (lastfaktor beregnes N/M hvor Ner antall elementer i hashtabellen og M er størrelsen på hashtabellen). Hvis vi benytter amorisert analyse får vi at kjøretiden for innsetting er...
+
+Svar: O(1)
+
+Q19:
+Anta du har binærtre G og legger til én ny kant i treet. Du vil nå ha...
+
+Svar: en syklisk graf.
+
+Q20:
+Hvorfor er amortisert analyse bedre enn vanlig worst-case-beregning i mange tilfeller?
+
+Svar: Worst case kan være altfor pessimistisk.
+
