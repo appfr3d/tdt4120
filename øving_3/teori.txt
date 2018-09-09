@@ -1,0 +1,99 @@
+Q1:
+Vi har en usortert liste med n elementer, og vi ønsker å finne ut hvor mange unike tall det er i listen. Etter algoritmene vi har lært til og med forelesningen om splitt og hersk, hva er den raskeste kjøretiden vi kan garantere for dette problemet (den beste worst-case kjøretiden)?
+
+
+Q2:
+Denne oppgaven handler om quicksort og mergesort. Med “sorteringsarbeid” menes her den faktiske flyttingen av tall som en sorteringsalgoritme gjør. Hvilket av følgende alternativ er sant?
+
+
+Q3:
+La liste A være en liste sortert i stigende rekkefølge, og B en liste sortert i synkende rekkefølge. Hvilken påstand stemmer da om kjøretiden til Quicksort?
+
+Q4:
+Hvilken av algoritmene forbruker mest ekstra minne i average case?
+
+Q5:
+All input kan gi worst-case kjøretid for randomized-quicksort
+
+Q6:
+Du ønsker å teste om kjøretiden til fire ulike, rekursive algoritmer er O(n2) ved hjelp av substitusjonsmetoden. Først setter du opp rekurrenser for algoritmene, og så forutsetter du for hver av dem den induktive hypotesen at T(n)≤c⋅n2. Etter å ha gjennomført substitusjonsmetoden for hver av rekurrensene får du resultatene
+
+T1(n)≤c⋅n^2−5n
+T2(n)≤c⋅n^2+5n
+T3(n)≤c⋅n^2+1
+T4(n)≤c⋅n^2−1
+
+Hvilke(n) av algoritmene har du greid å bevise at har kjøretid O(n2)? Anta at grunntilfellene i den matematiske induksjonen også stemmer.
+
+Q7:
+La T(n)=27⋅T(n/3)+n^3. Hvilket tilfelle tilhører rekurrensen når du benytter master-teoremet?
+
+Q8:
+La T(n)=27⋅T(n/3)+n^3. Hva blir kjøretiden?
+
+Q9:
+La T(n)=4⋅T(n/2)+n^3. Hva blir kjøretiden?
+
+Q10:
+La T(n)=T(n/3)+T(n/2)+T(n−1)+1 der T(1)=1. Hva blir høyden til rekursjonstreet?
+
+Q11:
+Løs rekurensen gitt ved T(n)=T(√n)+n ved hjelp av variabelskifte. Hva blir kjøretiden?
+
+
+Q12:
+Funksjonen gjoerNoe(n) under har kjøretid Θ(n). Hva blir kjøretiden til funksjonen f1(n)?
+
+
+Hint: Sett opp to rekurrenser T1(n) og T2(n) og finn først en løsning på lukket form for T1(n).
+
+function f1(n)
+    gjoerNoe(n)
+    if n > 1
+        f1(n / 2)
+        f2(n - 2)
+    end
+end
+
+function f2(n)
+    gjoerNoe(n)
+    if n > 1
+        f1(n / 2)
+    end
+end
+
+Q13:
+Hva blir kjøretiden til funksjonen f3(n)?
+
+function f3(n)
+    if n > 42
+        f3(n - 42)
+        f3(42)
+    end
+end
+
+Q14:
+Hva blir kjøretiden til funksjonen f4(n)? println tar konstant tid.
+
+function f4(n)
+    for i in 1:n
+        println("Algdat ruler!")
+    end
+
+    if n > 1
+        f4(3/4* n)
+        f4(1/4* n)
+    end
+end
+
+Q15:
+Funksjonen gjoerNoeAnnet(n) under har kjøretid Θ(n2). Hva blir kjøretiden til funksjonen f5(n)?
+
+function f5(n)
+    gjoerNoeAnnet(n/6)
+
+    if n > 1
+        f5(n/2 - 2)
+        f5(n/2 - 3)
+    end
+end
