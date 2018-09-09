@@ -1,0 +1,73 @@
+Q1:
+Hvilke av disse utsagnene om logaritmer stemmer?
+
+Svar:
+loga(a^n) = n
+log2(1024) = 10
+
+Q2:
+Hvilket av disse utsagnene må stemme gitt at a mod n=1?
+
+Svar: a−1 er delelig på n
+
+Q3:
+Velg alternativet som ordner kjøretidsklassene linearitmisk, eksponentiell, lineær, kubisk, kvadratisk, konstant, faktoriell, logaritmisk
+
+Svar: konstant, logaritmisk, lineær, linearitmisk, kvadratisk, kubisk, eksponentiell, faktoriell
+
+Q4:
+Gitt funksjonene f(n)=loga(n) og g(n)=logb(n), der a og b er konstanter slik at a,b>1.
+
+Hvilke av disse utsagnene stemmer?
+
+Svar:
+f(n)=Θ(g(n))
+f(n)=Ω(g(n))
+f(n)=O(g(n))
+
+Q5:
+Gitt funksjonene f(n)=lg(n^lg(5)) og g(n)=lg(5^lg(n)).
+
+Hvilke av disse utsagnene stemmer?
+
+Svar:
+f(n)=Θ(g(n))
+f(n)=Ω(g(n))
+f(n)=O(g(n))
+
+Q6:
+Dersom f(n)=o(g(n)) vet vi at
+
+Svar:
+g(n)=ω(f(n))
+f(n)=O(g(n))
+g(n)=Ω(f(n))
+
+Q7:
+To spillere skal etter tur plukke vekk fyrstikker fra en haug på bordet. Den som plukker opp den siste fyrstikken har tapt.
+
+Hver spiller må plukke opp minst én fyrstikk i hver runde, og kan maksimalt plukke opp syv fyrstikker.
+
+Hvis det er 3 fyrstikker igjen, hvor mange må du ta for å vinne?
+
+Svar: 2
+
+Q8:
+Hvis det er 14 fyrstikker igjen, hvor mange må du ta for å vinne?
+
+Svar: 5
+
+Q9:
+Hvis det er 94 fyrstikker igjen, hvor mange må du ta for å vinne?
+
+Svar: 5
+
+Q10:
+Hvis det er 217 fyrstikker igjen, hvor mange må du ta for å vinne?
+
+Svar: Det er ikke sikkert jeg vinner, uansett hvor mange jeg tar.
+
+Q11:
+Hvis det er 268 fyrstikker igjen, hvor mange må du ta for å vinne?
+
+Svar: 3
