@@ -1,19 +1,27 @@
 Q1:
 Vi har en usortert liste med n elementer, og vi ønsker å finne ut hvor mange unike tall det er i listen. Etter algoritmene vi har lært til og med forelesningen om splitt og hersk, hva er den raskeste kjøretiden vi kan garantere for dette problemet (den beste worst-case kjøretiden)?
 
+Svar: Θ(nlogn)
 
 Q2:
 Denne oppgaven handler om quicksort og mergesort. Med “sorteringsarbeid” menes her den faktiske flyttingen av tall som en sorteringsalgoritme gjør. Hvilket av følgende alternativ er sant?
 
+Svar: Quicksort gjør sorteringsarbeidet før det rekursive kallet, mens mergesort gjør det etterpå
 
 Q3:
 La liste A være en liste sortert i stigende rekkefølge, og B en liste sortert i synkende rekkefølge. Hvilken påstand stemmer da om kjøretiden til Quicksort?
 
+Svar: Begge har kjøretid Θ(n2)
+
 Q4:
 Hvilken av algoritmene forbruker mest ekstra minne i average case?
 
+Svar: Merge sort
+
 Q5:
 All input kan gi worst-case kjøretid for randomized-quicksort
+
+Svar: Sant
 
 Q6:
 Du ønsker å teste om kjøretiden til fire ulike, rekursive algoritmer er O(n2) ved hjelp av substitusjonsmetoden. Først setter du opp rekurrenser for algoritmene, og så forutsetter du for hver av dem den induktive hypotesen at T(n)≤c⋅n2. Etter å ha gjennomført substitusjonsmetoden for hver av rekurrensene får du resultatene
@@ -25,21 +33,41 @@ T4(n)≤c⋅n^2−1
 
 Hvilke(n) av algoritmene har du greid å bevise at har kjøretid O(n2)? Anta at grunntilfellene i den matematiske induksjonen også stemmer.
 
+
+
+Svar: T1, T4
+
+
+
+
+
+
+
 Q7:
 La T(n)=27⋅T(n/3)+n^3. Hvilket tilfelle tilhører rekurrensen når du benytter master-teoremet?
+
+Svar: Case 2
 
 Q8:
 La T(n)=27⋅T(n/3)+n^3. Hva blir kjøretiden?
 
+Svar: Θ(n^3 * logn)
+
 Q9:
 La T(n)=4⋅T(n/2)+n^3. Hva blir kjøretiden?
+
+Svar: Θ(n^3)
 
 Q10:
 La T(n)=T(n/3)+T(n/2)+T(n−1)+1 der T(1)=1. Hva blir høyden til rekursjonstreet?
 
+Svar: Θ(n)
+
+
 Q11:
 Løs rekurensen gitt ved T(n)=T(√n)+n ved hjelp av variabelskifte. Hva blir kjøretiden?
 
+Svar: Θ(n)
 
 Q12:
 Funksjonen gjoerNoe(n) under har kjøretid Θ(n). Hva blir kjøretiden til funksjonen f1(n)?
@@ -62,6 +90,8 @@ function f2(n)
     end
 end
 
+Svar: Θ(nlogn)
+
 Q13:
 Hva blir kjøretiden til funksjonen f3(n)?
 
@@ -71,6 +101,8 @@ function f3(n)
         f3(42)
     end
 end
+
+Svar: O(n)
 
 Q14:
 Hva blir kjøretiden til funksjonen f4(n)? println tar konstant tid.
@@ -86,6 +118,8 @@ function f4(n)
     end
 end
 
+Svar: O(nlogn)
+
 Q15:
 Funksjonen gjoerNoeAnnet(n) under har kjøretid Θ(n2). Hva blir kjøretiden til funksjonen f5(n)?
 
@@ -97,3 +131,5 @@ function f5(n)
         f5(n/2 - 3)
     end
 end
+
+Svar: O(n2)
