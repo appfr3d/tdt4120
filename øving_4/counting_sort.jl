@@ -35,7 +35,7 @@ end
 # Oppgave 2
 function counting_sort_length(A)
     # Finn ut hvor lang den lengste strengen er
-    # +1 fordi vi kan komme over strenger som er 0 lengde
+    # + 1 fordi vi kan komme over strenger som er 0 lengde
     longest = findmax(length.(A))[1] + 1
 
     B = fill("", length(A))
@@ -57,4 +57,24 @@ function counting_sort_length(A)
     return B
 end
 
+# Oppgave 3
+function flexradix(A, max_length)
+	# Legger til mellomrom i slutten av alle korte strenger
+	for i in 1:length(A)
+	    for j in length(A[i]):max_length
+	        A[i] = string(A[i], " "^(max_length-length(A[i])))
+	    end
+	end
 
+	# Radix sorterer
+    for i in max_length:-1:1
+        A = counting_sort_letters(A, i)
+    end
+
+    # Fjerner de unødvendige mellomrommene
+    for i in 1:length(A)
+        A[i] = rstrip(A[i])
+    end
+
+    return A
+end
