@@ -24,7 +24,7 @@ function counting_sort_letters(A, position)
 
     # Samler sortetringen og setter den inn i B 
     for i in length(A):-1:1
-    	pos = Int(A[i][position]) - start
+        pos = Int(A[i][position]) - start
         B[C[pos]] = A[i]
         C[pos] -= 1
     end
@@ -50,8 +50,8 @@ function counting_sort_length(A)
     end
 
     for i in length(A):-1:1
-    	B[C[length(A[i]) + 1]] = A[i]
-    	C[length(A[i]) + 1] -= 1
+        B[C[length(A[i]) + 1]] = A[i]
+        C[length(A[i]) + 1] -= 1
     end
 
     return B
@@ -59,14 +59,14 @@ end
 
 # Oppgave 3
 function flexradix(A, max_length)
-	# Legger til mellomrom i slutten av alle korte strenger
-	for i in 1:length(A)
-	    for j in length(A[i]):max_length
-	        A[i] = string(A[i], " "^(max_length-length(A[i])))
-	    end
-	end
+    # Legger til mellomrom i slutten av alle korte strenger
+    for i in 1:length(A)
+        for j in length(A[i]):max_length
+            A[i] = string(A[i], " "^(max_length-length(A[i])))
+        end
+    end
 
-	# Radix sorterer
+    # Radix sorterer
     for i in max_length:-1:1
         A = counting_sort_letters(A, i)
     end
