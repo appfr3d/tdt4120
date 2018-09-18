@@ -1,0 +1,95 @@
+Q1:
+Hva er worst case for sammenlikningsbasert sortering? Velg det alternativet som passer best.
+
+Svar: Ω(nlogn)
+Kilde: https://www.uio.no/studier/emner/matnat/ifi/INF4130/h09/undervisningsmateriale/Sortering.pdf (1. Innledning)
+
+Q2:
+Anta at du har en sammenlikningsbasert sorteringsalgoritme S som sorterer heltallene i en tabell med lengde n. Hvilke(t) alternativ er korrekt?
+
+Svar:
+S kan ha best case-kjøretid Θ(n).
+S kan ha worst case-kjøretid Θ(n2).
+
+Q3:
+Anta følgende tabell med elementer: [(x: 3, y: 5), (x: 1, y: 5), (x: 3, y: 3), (x: 3, y:4)]
+Dersom en stabil sorteringsalgoritme brukes for å sortere tabellen på x-verdiene, hvordan vil listen se ut sortert?
+
+Svar: [(x: 1, y: 5), (x: 3, y: 5), (x: 3, y: 3), (x: 3, y:4)]
+
+Q4:
+Hvilke(n) av de følgende algoritmene er stabil(e), gitt implementasjonen i pensumboka?
+
+Svar:
+Bubblesort
+Mergesort
+Counting sort
+Radix sort
+Insertion sort
+
+Q5:
+Anta at du skal bruke counting sort for å sortere n heltall, der hvert heltall er mellom 0 og k. Du vet at k er mye større enn n. Hva er den mest presise beskrivelsen av kjøretiden?
+
+Svar: Θ(k)  (man bare driter i n siden den er så mye mindre)
+
+Q6:
+Hvorfor itererer counting sort bakover gjennom A når heltallene skal settes inn i B?
+
+Svar: Fordi algoritmen skal være stabil.
+
+Q7:
+Radix sort sorterer på det mest signifikante sifferet først.
+
+Svar: Usant.
+
+Q8:
+Hvilken av disse algoritmene ville vært den beste som en del av radix sort?
+
+Svar:
+Mergesort
+
+Q9:
+Du skal sortere n heltall med d siffer ved hjelp av radix sort. Du kan anta at counting sort brukes som sorteringsrutine og at k=Θ(logn). Hva er den mest presise beskrivelsen av kjøretiden til algoritmen?
+
+Svar: Θ(dn)
+Siden k=Θ(logn), og radix sort generelt har en average case kjøretid på Θ(d(n + k)), og vi vet at n >> logn så kan vi si at kjøretiden vil best beskrives av Θ(dn)
+
+Q10:
+Det er mulig å sortere desimaltall med to desimaler ved hjelp av radix sort.
+
+Svar: Sant.
+
+Q11:
+Bucket sort har en worst case-kjøretid på Θ(n).
+
+Svar: Usant.
+
+Q12:
+Hva er kjøretiden for bucket sort i average case om vi bruker tre bøtter?
+
+Svar: n^2
+
+Q13:
+Hva er medianen i en sortert tabell?
+
+Svar: Det midterste elementet.
+
+Q14:
+Vi kan ikke finne det k-te største elementet til en usortert liste uten å sortere den.
+
+Svar: Usant.
+
+Q15:
+Hva er forventet kjøretid for randomized select?
+
+Svar: Θ(n)
+
+Q16:
+Randomized select har bedre worst case-kjøretid enn randomized quicksort.
+
+Svar: Usant. (Begge har Θ(n^2))
+
+Q17:
+Hva er worst case-kjøretiden til select?
+
+Svar: O(n)
