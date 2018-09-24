@@ -1,3 +1,5 @@
+# Litt tricky oppgaver denne uken, men har kommentert endel så det bør hjelpe litt
+
 struct Node
     children::Dict{Char,Node}
     posi::Array{Int}
@@ -180,3 +182,4 @@ function find_word(word, sub_node, index)
     end
 end
 
+# Takk for meg, snakkes neste uke 

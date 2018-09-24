@@ -1,0 +1,42 @@
+Q1: Hva er kjøretiden for å konstruere og sortere en heap av tall med Heapsort?
+
+Svar: O(nlgn)
+
+Q2: I en heap har du en node med indeks 3. Hva er indeksen til foreldrenoden?
+
+Svar: 1
+
+
+Q3: I en heap har du en node med indeks 8. Hva er indeksen til de to barnenodene?
+
+Svar: 16 og 17
+
+
+Q4: Hvilke(t) av disse tilfredsstiller kravene til en max-heap?
+
+Svar: A og D
+
+
+Q5: Hvis vi har en heap som ser slik ut, hvordan ser da listen som representerer heapen ut etter at vi har kjørt tre (3) iterasjoner av heapsort?
+
+Svar: 11, 8, 9, 4, 12, 14, 21
+
+
+Q6: Hvilke(n) påstand(er) er korrekt?
+
+Svar: Heapsort er en in-place algoritme
+
+
+Q7: Hva er den såkalte heap-egenskapen ved en max-heap?
+
+Svar: Verdien til en node er alltid større eller lik verdiene til barnenodene
+
+
+Q8: Hvis du setter verdiene 1, 2, 3, 9, 5, 6, 7, 10, 4, og 8 inn i et tomt binærsøketre (én etter én, i oppgitt rekkefølge), hva blir høyden til treet?
+
+Svar: 7
+
+
+Q9: Hvis du setter verdiene 1, 2, 9, 5, 4, 8 og 3 inn i en tom binær min-heap(én etter én, i oppgitt rekkefølge), hva blir høyden til heapen?
+
+Svar: 2
