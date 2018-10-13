@@ -1,0 +1,143 @@
+Q1: Hvilke(n) påstand(er) er korrekt(e)?
+
+Svar:
+Grådige algoritmer trenger ikke å vite løsningen på alle mulige delproblemer før den kan gjøre det grådige valget.
+
+Grådige algoritmer brukes til å løse optimaliseringsproblemer.
+
+
+Q2: Hvilke to egenskaper må et problem ha for at vi kan bruke en grådig algoritme?
+
+Svar: Grådighetsegenskapen og optimal substruktur
+
+
+Q3: Hvorfor kan det være ønskelig å bruke en grådig algoritme istedenfor dynamisk programmering?
+
+Svar: Algoritmen kan være enklere å implementere og ha bedre kjøretid
+
+
+Q4: Hva har grådige algoritmer og dynamisk programmering til felles?
+
+Svar: Begge utnytter optimal delstruktur
+
+
+Q5: Hvilke(n) påstand(er) er korrekt(e)?
+
+Svar: 
+En grådig algoritme kan ikke løse 0-1 knapsack-problemet
+
+0-1 kan gi mange forskjellige muligheter
+men med fractional kan man fylle opp med det med størst verdi/vekt, og så fortsette problemt med resten av plassen i sekken
+
+
+Q6: Du ønsker å velge ut så mange aktiviteter som mulig fra en mengde av åtte aktivitet uten at de overlapper. Aktivitetene har følgende start og sluttidspunkter.
+Gitt at du hadde brukt RECURSIVE-ACTIVITY-SELECTOR (side 419) til å løse problemet. Hvilken aktivitet ville vært den 2. i løsningsmengden A?
+
+Svar: 8
+
+
+Q7: Gitt at du hadde brukt GREEDY-ACTIVITY-SELECTOR (side 421) på tabellen. Hvilken aktivitet ville vært den 3. aktiviteten i løsningsmengden A?
+
+MERK For at algoritmen skal fungere vil du måtte omorganisere elementene i tabellen slik at antagelsen til GREEDY-ACTIVITY-SELECTOR er oppfylt.
+
+Svar:
+
+i 	s 	f
+1	12	14
+2	12	17
+3	6	10
+4	15	18
+5	16	17
+6	0	5
+7	4	7
+8	6	9
+
+blir til 
+
+i 	s 	f
+6	0	5
+7	4	7
+8	6	9
+3	6	10
+1	12	14
+2	12	17
+5	16	17
+4	15	18
+
+
+a1 = nr.6
+a2 = nr.8
+a3 = nr.1
+
+
+Q8: Gitt at du hadde brukt RECURSIVE-ACTIVITY-SELECTOR (side 419) på tabellen. Hva blir løsningen (aktiviteter i kronologisk rekkefølge)?
+
+Svar: 6,8,1,5
+
+
+Q9: Hva forteller teorem 16.1 i boka om aktivitetsutvalg-problemet?
+
+Svar: At det har grådighetsegenskapen
+
+
+Q10: Du ønsker å finne optimal prefix-kode for en streng. Strengens alfabet representeres ved bokstavene a til g. Frekvensene er som følger:
+
+BOKSTAV	FREKVENS
+a	50
+b	2
+c	20
+d	25
+e	200
+f	80
+g	60
+
+Gitt at vi velger å kode alfabetet på følgende måte:
+
+a: 00001
+b: 001
+c: 1
+d: 00000
+e: 0001
+f: 010
+g: 011
+Hvor mange bits må vi bruke for å representere strengen?
+
+Svar:
+a gir 5*50 = 250
+b gir 3*2  = 6
+c gir 1*20 = 20
+d gir 5*25 = 125
+e gir 4*200= 800
+f gir 3*80 = 240
+g gir 3*60 = 180
+sum = 1621
+
+
+Q11: Du bruker Huffmans algoritme. Hvilke to bokstaver slår du sammen først?
+
+Svar: b og c
+Fordi man setter sammen de med minst verdi først
+
+
+Q12: Du bruker Huffmans algoritme. Hvor mange bits blir b kodet til?
+
+Svar: 5
+
+
+Q13: Du bruker Huffmans algoritme. Hvor mange bits blir d kodet til?
+
+Svar: 4
+
+
+Q14: Du bruker Huffmans algoritme. Hvor mange bits blir e kodet til?
+
+Svar: 1
+
+
+Q15: Du bruker Huffmans algoritme. Hvor mange bits trenger du for å kode strengen med løsningen du finner?
+
+Svar: 980
+
+
+
+
